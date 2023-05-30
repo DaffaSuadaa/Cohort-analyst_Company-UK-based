@@ -41,6 +41,8 @@ WHERE DATE(InvoiceDate) BETWEEN "2011-01-01" and "2011-12-30"
 GROUP BY month
 ORDER BY month;
   ```
+**Table results:**
+
 <img src="https://github.com/DaffaSuadaa/Cohort-analyst_Company-UK-based/assets/134934646/cc766f90-7843-4ea2-8144-6d48b1a7900c" width="500" height="400">
 
 **Insight :** From 1 Jan 2011- 9 Dec 2011 we can see that the number of user increase over the year.
@@ -108,6 +110,8 @@ ON r.cohort_month =   c.cohort_month
 WHERE r.cohort_month is not null and DATE(r.cohort_month) BETWEEN "2011-01-01" and "2011-12-30"
 ORDER BY Month;
 ```
+**Table results:**
+
 ![WhatsApp Image 2023-05-25 at 15 52 11](https://github.com/DaffaSuadaa/Cohort-analyst_Company-UK-based/assets/134934646/071a9ad8-e39d-41ac-8678-9d0ee3bfefa3)
 
 This query is displayed using a Google Sheet connected to BigQuery
